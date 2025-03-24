@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Alexandre",
+  lastName: "Quin",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Développeur Web",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Paris", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Français", "Anglais"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/alexandrequin",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/alexandre-quin-a58b71342/",
   },
   {
     name: "X",
@@ -44,27 +44,28 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:contact@alexandre-quin.fr",
   },
 ];
 
 const home = {
-  label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  label: "Accueil",
+  title: `${person.name} - ${person.role}`,
+  description: `Portfolio web mettant en avant mon travail en tant que développeur Full Stack JavaScript Node.js.`,
+  headline: <>Développeur et créateur de solutions Web.</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Je suis Alexandre, développeur Full Stack JavaScript Node.js. <br /> Ma
+      passion ? Concevoir des API REST performantes, des architectures back-end
+      optimisées et des interfaces web modernes.
     </>
   ),
 };
 
 const about = {
-  label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "A propos",
+  title: `A propos`,
+  description: `Voici Alexandre, développeur Full Stack JavaScript Node.js passionné par la conception d'API REST et d'architectures web performantes.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -73,7 +74,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -81,53 +82,65 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Je suis Alexandre, développeur Full Stack JavaScript Node.js basé en
+        Île-de-France. Passionné par la transformation de défis complexes en
+        solutions back-end simples et efficaces, mon travail englobe la
+        conception d'API REST, l'optimisation des architectures, l'intégration
+        de technologies modernes, ainsi que la mise en place de pratiques DevOps
+        pour améliorer l'efficacité et la fiabilité des déploiements.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiences",
     experiences: [
       {
-        company: "FLY",
+        company: "Development Hosting Quin",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Auto Entrepreneur",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Création de sites web pour les entreprises et les particuliers.</>,
+          <>Développement d'API REST pour les applications web et mobiles.</>,
+          <>Optimisation des performances</>,
+          <>Assistance technique et maintenance des applications.</>,
         ],
+
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Marasit",
+        timeframe: "2020 - 2022",
+        role: "Developpeur Web Full Stack",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Développement WordPress et intégration de thèmes et de plugins
+            personnalisés.
           </>,
+          <>Refonte plugin API SugarCRM pour intégration avec WordPress</>,
+          <>Assistance clientèle sur le CMS.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Auchan",
+        timeframe: "2015 - 2020",
+        role: "Employé Libre Service Liquide",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Préparation et mise en place FAV, mise en rayon, gestion des stocks.
           </>,
+          <>Inventaire magasin.</>,
+          <>Installation entrée saisonnière.</>,
+          <>Renseignements clients sur les vins.</>,
         ],
         images: [],
       },
@@ -135,25 +148,29 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Formations",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Alt | Incubateur Tech",
+        description: <>RNCP VI - Concepteur Développeur D'applications</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Doranco",
+        description: <>RNCP V - Développeur web et web mobile</>,
+      },
+      {
+        name: "Lycée Professionnel du Véxin",
+        description: <>Baccalauréat professionnel vente</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Compétences",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "DevOps",
+        description: <>DOCKER | CI/CD | VPS | LINUX</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -171,8 +188,8 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Développement",
+        description: <>TYPESCRIPT | NODEJS | NESTJS | REACT | NEXTJS | SHELL</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -189,16 +206,16 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  title: `Développement, DevOps & Tech`,
+  description: `Mes publications sur le développement web, les technologies et les bonnes pratiques.`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  label: "Projets",
+  title: `${person.name} - Projets`,
+  description: `Les différents projets sur lesquels j'ai travaillé.`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
