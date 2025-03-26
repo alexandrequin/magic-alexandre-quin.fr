@@ -186,12 +186,12 @@ const about = {
         description: <>TYPESCRIPT | NODEJS | NESTJS | REACT | NEXTJS | SHELL</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
